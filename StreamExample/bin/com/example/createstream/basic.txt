@@ -1,0 +1,3 @@
+	Using Stream.ofNullable() method
+-> allowed null value inside this method if we take of() inside of ofNullable
+	 then JVM through error

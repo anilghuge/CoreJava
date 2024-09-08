@@ -1,0 +1,22 @@
+Q]What are the major operations supported by Stream API?
+==>	The Stream API in Java 8 primarily categorizes two types of operations: 
+	Intermediate Operations and Terminal Operations
+	
+	Intermediate Operations
+		When an operation on a stream further produces another stream as a result,
+		we call it an intermediate operation. As intermediate operations return 
+		another stream as a result, they can be chained together to form a pipeline
+		of operations. As the word ‘intermediate’ suggest, 
+		these operations doesn’t give end result. 
+		They just convert one stream to another stream. 
+		For example: map(), filter(), distinct(), sorted(), limit(), skip()
+
+	Terminal Operations
+		The operations which return non-stream values such as primitive 
+		or object are called terminal operations.
+		Furthermore, unlike terminal operations, we can’t chain them together.
+		They produce the end result. Once a terminal operation completes,
+		the Stream is no longer valid. 
+		Hence, we can’t use that stream again. 
+		For example : forEach(), toArray(), reduce(), collect(), min(), max(), count(),
+ 		anyMatch(), allMatch(), noneMatch(), findFirst(), findAny()
